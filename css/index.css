@@ -1,0 +1,24 @@
+﻿body {
+	background-color: #1C1C1C;
+}
+
+#main-content {
+	background-color: #282828;
+	margin:42px;
+}
+
+/* 
+	THIS style will apply to content loaded in a temlate, AFTER it is loaded.  
+	In this case, the submit button is in name.html.
+*/
+
+#btnSubmit {
+	color: #000;
+	background-color: #FF9F20;
+	height: 24px;
+	width: 96px;
+	border:0px; 
+	border-radius: 8px;
+	position: relative;
+	left: 96px;
+}

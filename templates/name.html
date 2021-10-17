@@ -1,0 +1,50 @@
+﻿
+<form name="myForm" id="myForm" action="submitForm.html">
+
+	First Name: <input type="text" class="input-field" name="firstName" id="firstName" />
+	<br />
+	<br />
+
+	Last Name: <input type="text" class="input-field" name="lastName" id="lastName" />
+	<br />
+	<br />
+
+	<input type="submit" name="submit" id="btnSubmit" value="Submit Form" onclick="return submitForm()" />
+
+</form>
+
+<script>
+
+	function submitForm() {
+
+		if (element("firstName").value == "" || element("lastName").value == "") {
+			alert("First and Last Name are Required.")
+			return false;
+		}
+
+
+		alert("The script in the dynamically loaded name.html template executed.  You submitted the form.");
+
+		return false;
+	}
+</script>
+
+<style>
+
+	form {
+		font-family: 'Lucida Sans', sans-serif;
+		padding:16px;
+		color: #FFDB22;
+	}
+
+	.input-field {
+		border: 0px;
+		background-color: #FFF6CC;
+		height: 26px;
+		border-radius: 8px;
+		padding-left:4px;
+	}
+
+	/* Styling for the SUBMIT button is in the main project CSS.  It will apply to templates after they are loaded */
+
+</style>
